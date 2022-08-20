@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Elnogara_FirstModule>
+            <version>1.0.0</version>
+        </Elnogara_FirstModule>
+    </modules>
+    <!--Para declarar uma rota no magento é necessário passar essas informações abaixo, sendo elas:
+    o 'frontend' porque ela será acessada através do frontend da loja e não do admin. Routers que diz que será declarado uma rota dentro dele, o 'nogaracart' é o apelido dado para o código a minha rota,
+    o 'use' eu estou passando que será uma rota do tipo standard, existem outros tipos mas não vou abordar isso aqui,
+    em seguida é necessário passar o <args> que são os argumentos que ela vai utilizar: <module> que diz qual é o módulo que vai
+    usar essa url e o frontName é o seu frontname mesmo para essa rota, o frontname para acessar ela.-->
+    <frontend>
+        <routers>
+            <nogara>
+                <use>standard</use>
+                <args>
+                    <module>Elnogara_FirstModule</module>
+                    <frontName>firstmodule</frontName>
+                </args>
+            </nogara>
+        </routers>
+    </frontend>
+</config>
