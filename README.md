@@ -72,3 +72,4 @@ Agora que tudo foi criado é preciso entender como vamos chamar essa rota corret
 `
 https://DOMINIO-DA-SUA-LOJA/firstmodule/test/test
 `
+<strong>Qualquer dúvida estou a disposição - <a href="https://wellingtonnogara.com/" style="color: red;">Wellington Nogara</a>.</strong>
