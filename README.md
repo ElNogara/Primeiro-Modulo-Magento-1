@@ -1,4 +1,4 @@
-<h1>Primeiro Modulo Magento 1</h1>
+<h1>Primeiro Módulo Magento 1</h1>
 Aprendendo a criar seu primeiro módulo magento 1 e a criar uma rota para um controller na plataforma. <br>
 
 
