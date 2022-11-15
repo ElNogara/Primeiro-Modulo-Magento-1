@@ -5,11 +5,11 @@ Aprendendo a criar seu primeiro módulo magento 1 e a criar uma rota para um con
 <h2>O que é preciso ter em mente na hora de criar o primeiro módulo Magento 1?</h2>
 O seu módulo precisa seguir a estrutura padrão do Magento, ou seja, todo módulo desenvolvido deve estar dentro de app/code/<strong>CODEPOOL</strong>/<strong>NAMESPACE</strong>/<strong>MODULENAME</strong></br></br>
 
-_CODEPOOL_ -> Pode variar entre 'local' e 'community'... Um resumão sobre isso, pois não é o foco aqui explicar, mas se usa o local quando seu módulo está sendo desenvolvido especificamente para uma funcionalidade de uma loja, já o community é utilizado quando as funções do seu módulo são mais genéricas ou seja, pode auxiliar ou melhorar a utilização de várias lojas.</br>
+_CODEPOOL_ -> Pode variar entre 'local', 'community' e 'core'... Um resumão sobre isso, se usa o local quando seu módulo está sendo desenvolvido especificamente para uma funcionalidade de uma loja, o community é utilizado quando as funções do seu módulo são mais genéricas ou seja, pode auxiliar ou melhorar a utilização de várias lojas e o core é utilizado pela plataforma para armazenar todos os módulos padrões dela então não é recomendado realizar nenhuma alteração nessa codepool.</br>
 _NAMESPACE_ -> É geralmente o nome da empresa/fabricante ou desenvolvedor que está criando o módulo.</br>
-_MODULENAME_ -> é o nome do módulo, geralmente tentem utilizar um nome mais curto e que tenha referência com o que ele vai fazer.</br>
+_MODULENAME_ -> É o nome do módulo, geralmente tentem utilizar um nome mais curto e que tenha referência com as funções que vai realizar. (Isso facilita sua vida no desenvolvimento dele)</br>
 
-A pasta etc do nosso módulo é responsável pelas configurações dele, como quais arquivos vão ser utilizados, rotas que serão criadas, dependências de outros módulos, campos que serão criados no admin da plataforma e por ai vai... Dentro do etc é obrigatório que seu módulo tenha o arquivo config.xml que é a onde você vai apontar esses campos utilizados. Abaixo um exemplo:
+A pasta etc do módulo é responsável pelas configurações dele, como quais arquivos vão ser utilizados, rotas que serão criadas, dependências de outros módulos, campos que serão criados no admin da plataforma e por ai vai... Dentro do etc é obrigatório que seu módulo tenha o arquivo config.xml que é a onde você vai apontar esses campos utilizados. Abaixo um exemplo comentado:
 
 ```
 <?xml version="1.0"?>
@@ -72,4 +72,4 @@ Agora que tudo foi criado é preciso entender como vamos chamar essa rota corret
 `
 https://DOMINIO-DA-SUA-LOJA/firstmodule/test/test
 `
-<strong>Qualquer dúvida estou a disposição - <a href="https://wellingtonnogara.com/" style="color: red;">Wellington Nogara</a>.</strong>
+<strong>Espero muito ter ajudado. Mas qualquer dúvida estou a disposição - <a href="https://wellingtonnogara.com/" style="color: red;">Wellington Nogara</a>.</strong>
